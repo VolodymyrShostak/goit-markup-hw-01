@@ -5,20 +5,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <link rel="stylesheet" href="./css/styles.css">
     </head>
-    <body>
+    <body class="page">
         <header>
-            <nav>
+            <nav >
                 <a href="/">
-                    <b>WebStudio</b>
+                    <span class="logo-one" style="text-transform:capitalize">web</span>
+                    <span class="logo-two" style="text-transform:capitalize">studio</span>
                 </a>
-                <ul>
-                    <li><a href="">Студія</a></li>
-                    <li><a href="">Портфоліо</a></li>
-                    <li><a href="">Контакти</a></li>
+                <ul class="site-nav list">
+                    <li><a href="" class="link">Студія</a></li>
+                    <li><a href="" class="link">Портфоліо</a></li>
+                    <li><a href="" class="link" >Контакти</a></li>
                 </ul>
             </nav>
-            <ul>
+            <ul class="contacts list">
                 <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
@@ -26,38 +28,38 @@
         <main>
             <!--Шапка сайту-->
             <div>
-                <section>
-                    <h1>Ефективні рішення для вашого бізнесу</h1>
-                    <button type="button">Замовити послугу</button>
+                <section class="hero">
+                    <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+                    <button type="button" class="button">Замовити послугу</button>
                 </section>
             </div>
             <!--Основні акценти-->
             <section>
-            <h2>наші пріорітети</h2>    
-                <ul>
+            <!-- <h2 class="section-title">Наші пріорітети</h2>     -->
+                <ul class="priority list">
                     <li>
-                        <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
+                        <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
                         <p>
                             Ідейні міркування, і навіть початок повсякденної
                             роботи з формування позиції.
                         </p>
                     </li>
                     <li>
-                        <h3>ПУНКТУАЛЬНІСТЬ</h3>
+                        <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
                         <p>
                             Завдання організації, особливо рамки і місце
                             навчання кадрів тягне у себе.
                         </p>
                     </li>
                     <li>
-                        <h3>ПЛАНУВАННЯ</h3>
+                        <h3 class="title">ПЛАНУВАННЯ</h3>
                         <p>
                             Так само консультація з широким активом значною
                             мірою зумовлює.
                         </p>
                     </li>
                     <li>
-                        <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                        <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                         <p>
                             Значимість цих проблем настільки очевидна, що
                             реалізація планових завдань.
@@ -66,9 +68,9 @@
                 </ul>
             </section>
             <!--Напрямки діяльності-->
-            <section>
-                <h2>Чим ми займаємося</h2>
-                <ul>
+            <section class="section">
+                <h2 class="section-title">Чим ми займаємося</h2>
+                <ul class="image list">
                     <li>
                         <img
                             src="./images/img-operation-1.jpg"
@@ -95,16 +97,16 @@
                 </ul>
             </section>
             <!--Наша команда-->
-            <section>
-                <h2>Наша команда</h2>
-                <ul>
+            <section class="section">
+                <h2 class="section-title">Наша команда</h2>
+                <ul class="personal list">
                     <li>
                         <img
                             src="./images/img1.jpg"
                             alt="фото Ігор Дем'яненко"
                             width="270"
                         />
-                        <h3>Ігор Дем'яненко</h3>
+                        <h3 class="name">Ігор Дем'яненко</h3>
                         <p>Product Designer</p>
                     </li>
                     <li>
@@ -113,7 +115,7 @@
                             alt="фото Ольга Рєпіна"
                             width="270"
                         />
-                        <h3>Ольга Рєпіна</h3>
+                        <h3 class="name" >Ольга Рєпіна</h3>
                         <p>Product Designer</p>
                     </li>
                     <li>
@@ -122,7 +124,7 @@
                             alt="фото Микола Тарасов"
                             width="270"
                         />
-                        <h3>Микола Тарасов</h3>
+                        <h3 class="name">Микола Тарасов</h3>
                         <p>Product Designer</p>
                     </li>
                     <li>
@@ -131,7 +133,7 @@
                             alt="фото Михайло Єрмаков"
                             width="270"
                         />
-                        <h3>Михайло Єрмаков</h3>
+                        <h3 class="name">Михайло Єрмаков</h3>
                         <p>UI Designer</p>
                     </li>
                 </ul>
@@ -139,13 +141,16 @@
         </main>
         <!--футер-->
         <footer>
-            <div>
-                <a href="/"><b>WebStudio</b></a>
+            <div class="footer">
+                <a href="/">
+                    <span class="logo-one" style="text-transform:capitalize">web</span>
+                    <span class="logo-three" style="text-transform:capitalize">studio</span>
+                </a>
                 <address>
-                    <ul>
-                    <li><a href="/">м. Київ, пр-т Лесі Українки, 26></a></li>
-                    <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a href="tel:+38096111111">+38 096 111 11 11</a></li>
+                    <ul class="address list">
+                    <li><a href="/" class="post-address">м. Київ, пр-т Лесі Українки, 26</a></li>
+                    <li><a href="mailto:info@devstudio.com" class="mail">info@devstudio.com</a></li>
+                    <li><a href="tel:+38096111111" class="tel">+38 096 111 11 11</a></li>
                 </ul>
                 </address>
             </div>
